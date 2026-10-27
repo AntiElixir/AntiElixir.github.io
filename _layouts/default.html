@@ -11,8 +11,6 @@
     {% endif %}
     {% if page.url == "/projects/" %}
       {% assign seo_description = page.description | default: settings.seo.projects_description %}
-    {% elsif page.url == "/notes/" %}
-      {% assign seo_description = page.description | default: settings.notes.description | default: settings.seo.default_description %}
     {% else %}
       {% assign seo_description = page.description | default: page.excerpt | default: page.subtitle | default: settings.seo.default_description | default: settings.description | default: site.description %}
     {% endif %}
@@ -36,7 +34,7 @@
     {% if site.bing_site_verification and site.bing_site_verification != "" %}
       <meta name="msvalidate.01" content="{{ site.bing_site_verification | escape }}">
     {% endif %}
-    <meta property="og:type" content="{% if page.collection == 'notes' or page.collection == 'works' %}article{% else %}website{% endif %}">
+    <meta property="og:type" content="{% if page.collection == 'works' %}article{% else %}website{% endif %}">
     <meta property="og:site_name" content="{{ settings.author.name }} {{ settings.author.name_zh }}">
     <meta property="og:locale" content="en_US">
     <meta property="og:title" content="{{ seo_title | strip | escape }}">
@@ -129,10 +127,16 @@
                 <button class="nav-trigger" type="button" aria-haspopup="true">{{ item.title }}</button>
                 <div class="nav-submenu">
                   {% for child in item.submenu %}
-                    <a href="{{ child.url | relative_url }}" {% if page.url contains child.url %}aria-current="page"{% endif %}>{{ child.title }}</a>
+                    {% if child.external %}
+                      <a href="{{ child.url }}" target="_blank" rel="noopener noreferrer">{{ child.title }}</a>
+                    {% else %}
+                      <a href="{{ child.url | relative_url }}" {% if page.url contains child.url %}aria-current="page"{% endif %}>{{ child.title }}</a>
+                    {% endif %}
                   {% endfor %}
                 </div>
               </div>
+            {% elsif item.external %}
+              <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
             {% else %}
               <a href="{{ item.url | relative_url }}" {% if page.url == item.url or page.url contains item.url and item.url != "/" %}aria-current="page"{% endif %}>{{ item.title }}</a>
             {% endif %}
@@ -172,8 +176,14 @@
           {% for item in settings.menu %}
             {% if item.submenu %}
               {% for child in item.submenu %}
-                <a href="{{ child.url | relative_url }}">{{ child.title }}</a>
+                {% if child.external %}
+                  <a href="{{ child.url }}" target="_blank" rel="noopener noreferrer">{{ child.title }}</a>
+                {% else %}
+                  <a href="{{ child.url | relative_url }}">{{ child.title }}</a>
+                {% endif %}
               {% endfor %}
+            {% elsif item.external %}
+              <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
             {% else %}
               <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
             {% endif %}

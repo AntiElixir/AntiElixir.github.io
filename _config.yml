@@ -10,19 +10,11 @@ google_site_verification: "C3tW73B8kCgpsct-yYhF3YsgPLdg6xhnv6lQaf5MDPA"
 bing_site_verification: ""
 
 markdown: kramdown
-permalink: /notes/:slug/
 
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
 
-paginate: 10
-paginate_path: "/notes/page/:num"
-
 collections:
-  notes:
-    output: true
-    permalink: /notes/:slug/
   works:
     output: true
     permalink: /work/:slug/
@@ -32,11 +24,6 @@ defaults:
       path: ""
     values:
       layout: "page"
-  - scope:
-      path: ""
-      type: "notes"
-    values:
-      layout: "note"
   - scope:
       path: ""
       type: "works"
