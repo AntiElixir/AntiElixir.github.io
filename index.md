@@ -14,7 +14,12 @@ description: "Mingliang Hao (郝铭梁) is an undergraduate student at Shanghai 
         {% include responsive-photo.html src=settings.hero.image alt=hero_alt sizes="(max-width: 900px) 100vw, 42vw" fetchpriority="high" %}
       </div>
       <div class="hero-copy">
-        <h1>{{ settings.hero.title }}</h1>
+        <h1 class="hero-tagline">
+          <span class="tagline-line"><span class="tagline-letter">A</span> Always</span>
+          <span class="tagline-line"><span class="tagline-letter">B</span> Be</span>
+          <span class="tagline-line"><span class="tagline-letter">C</span> Curious</span>
+          <span class="tagline-bottom">ALWAYS BE CURIOUS</span>
+        </h1>
         {% if settings.hero.description %}
           <p>{{ settings.hero.description }}</p>
         {% endif %}
@@ -36,23 +41,6 @@ description: "Mingliang Hao (郝铭梁) is an undergraduate student at Shanghai 
       <div>
         <h3>Quantitative finance</h3>
         <p>How can machine learning models predict commodity futures markets?</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" aria-labelledby="hobbies">
-  <div class="container">
-    <p class="eyebrow">Beyond research</p>
-    <h2 id="hobbies">Hobbies</h2>
-    <div class="hobbies-grid">
-      <div class="hobby-card">
-        <h3>Basketball</h3>
-        <p>Point guard. Working on my first step, crossover, and defensive stance. Basketball teaches me about rhythm, spacing, and reading the defense — skills that translate to research too.</p>
-      </div>
-      <div class="hobby-card">
-        <h3>Phigros</h3>
-        <p>Rhythm game enthusiast. Phigros's dynamic judgment lines and creative chart designs keep me coming back. It's like solving a puzzle at 200 BPM.</p>
       </div>
     </div>
   </div>
@@ -110,3 +98,21 @@ description: "Mingliang Hao (郝铭梁) is an undergraduate student at Shanghai 
     </div>
   </div>
 </section>
+
+<section class="section" aria-labelledby="hobbies">
+  <div class="container">
+    <p class="eyebrow">Beyond research</p>
+    <h2 id="hobbies">Hobbies</h2>
+    <div class="hobbies-grid">
+      <div class="hobby-card">
+        <h3>Basketball</h3>
+        <p>Point guard. Working on my first step, crossover, and defensive stance. Basketball teaches me about rhythm, spacing, and reading the defense — skills that translate to research too.</p>
+      </div>
+      <div class="hobby-card">
+        <h3>Phigros</h3>
+        <p>Rhythm game enthusiast. Phigros's dynamic judgment lines and creative chart designs keep me coming back. It's like solving a puzzle at 200 BPM.</p>
+      </div>
+    </div>
+  </div>
+</section>
+

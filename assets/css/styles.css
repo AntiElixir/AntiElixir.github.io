@@ -171,6 +171,30 @@ img {
   max-width: 820px;
 }
 
+.hero-tagline {
+  display: flex;
+  flex-direction: column;
+}
+
+.tagline-line {
+  display: block;
+  white-space: nowrap;
+}
+
+.tagline-letter {
+  color: var(--accent);
+  display: inline-block;
+  margin-right: 0.2em;
+}
+
+.tagline-bottom {
+  display: block;
+  font-size: 0.7em;
+  letter-spacing: 0.06em;
+  margin-top: 0.4em;
+  opacity: 0.7;
+}
+
 .hero-copy p {
   color: var(--muted);
   font-size: 1.1rem;
