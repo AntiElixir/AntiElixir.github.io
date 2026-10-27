@@ -145,14 +145,6 @@
       {{ content }}
     </main>
 
-    {% if settings.gallery %}
-      <section class="footer-gallery" aria-label="Photo gallery">
-        {% for image in settings.gallery %}
-          {% include responsive-photo.html src=image.url alt=image.alt sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 25vw" %}
-        {% endfor %}
-      </section>
-    {% endif %}
-
     <footer class="site-footer">
       <div class="container footer-grid">
         <div class="footer-author">
