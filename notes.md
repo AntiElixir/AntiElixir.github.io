@@ -3,7 +3,7 @@ title: Notes
 permalink: /notes/
 eyebrow: Notes
 subtitle: "Reading notes, research logs, and things I find interesting."
-description: "Notes by Hao Mingliang (郝铭梁) on ocean science, AI, basketball, books, and more."
+description: "Notes by Mingliang Hao (郝铭梁) on AI, embodied intelligence, quantitative finance, ocean science, basketball, and more."
 ---
 
 <section class="section page-section">

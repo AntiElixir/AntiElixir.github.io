@@ -5,7 +5,7 @@ baseurl: ""
 email: "fhy_elixir@sjtu.edu.cn"
 github_username: "AntiElixir"
 # Paste the value from Google Search Console's HTML-tag verification method here.
-google_site_verification: "<meta name="google-site-verification" content="C3tW73B8kCgpsct-yYhF3YsgPLdg6xhnv6lQaf5MDPA" />"
+google_site_verification: "C3tW73B8kCgpsct-yYhF3YsgPLdg6xhnv6lQaf5MDPA"
 # Bing Webmaster Tools HTML-tag verification value. Rendered site-wide when set.
 bing_site_verification: ""
 

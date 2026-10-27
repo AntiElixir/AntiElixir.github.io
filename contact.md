@@ -3,13 +3,13 @@ title: Contact
 permalink: /contact/
 eyebrow: Contact
 subtitle: "For research collaborations and academic inquiries."
-description: "Contact Hao Mingliang (郝铭梁), an undergraduate student at Shanghai Jiao Tong University."
+description: "Contact Mingliang Hao (郝铭梁), an undergraduate student at Shanghai Jiao Tong University."
 ---
 
 <section class="section page-section">
   <div class="container">
     <div class="contact-layout">
-      {% include responsive-photo.html src="/assets/shared/portraits/sunset-photo.jpg" alt="Hao Mingliang" sizes="(max-width: 900px) 100vw, 48vw" %}
+      {% include responsive-photo.html src="/assets/shared/portraits/sunset-photo.jpg" alt="Mingliang Hao" sizes="(max-width: 900px) 100vw, 48vw" %}
       <div class="contact-copy">
         <p class="eyebrow">Research collaborations · academic inquiries</p>
         <h2>Let's talk about ocean science, AI, or basketball.</h2>
@@ -29,7 +29,7 @@ description: "Contact Hao Mingliang (郝铭梁), an undergraduate student at Sha
 
     <div class="contact-note">
       <p class="eyebrow">Current interests</p>
-      <p>Magnetics tactile sensing, ocean dynamics, machine learning, and quantitative finance. Also happy to talk about basketball tactics or Phigros strategies.</p>
+      <p>Embodied intelligence, AI, magnetics tactile sensing, quantitative finance, and ocean dynamics. Also happy to talk about basketball tactics or Phigros strategies.</p>
     </div>
   </div>
 </section>
