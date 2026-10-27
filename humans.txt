@@ -1,0 +1,16 @@
+/* TEAM */
+Name: Hao Mingliang (郝铭梁)
+Role: Undergraduate Student
+Location: Shanghai, China
+University: Shanghai Jiao Tong University
+Major: Marine Science
+Minor: Finance
+Email: fhy_elixir@sjtu.edu.cn
+GitHub: https://github.com/AntiElixir
+
+/* SITE */
+Last update: 2026-10-27
+Language: English, Chinese
+Doctype: HTML5
+Components: Jekyll, GitHub Pages
+IDE: Qoder

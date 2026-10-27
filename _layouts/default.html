@@ -23,8 +23,13 @@
     {% assign robots_directive = page.robots | default: 'index,follow,max-image-preview:large' %}
     <title>{{ seo_title | strip | escape }}</title>
     <meta name="description" content="{{ seo_description | strip_html | strip_newlines | strip | escape }}">
+    <meta name="keywords" content="Hao Mingliang, 郝铭梁, Shanghai Jiao Tong University, SJTU, Marine Science, Oceanography, AI, Machine Learning, Robotics, Quantitative Finance">
+    <meta name="author" content="Hao Mingliang (郝铭梁)">
     <meta name="robots" content="{{ robots_directive }}">
     <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="alternate" hreflang="en" href="{{ canonical_url }}">
+    <link rel="alternate" hreflang="zh" href="{{ canonical_url }}">
+    <link rel="sitemap" type="application/xml" href="{{ '/sitemap.xml' | absolute_url }}">
     {% if site.google_site_verification and site.google_site_verification != "" %}
       <meta name="google-site-verification" content="{{ site.google_site_verification | escape }}">
     {% endif %}
@@ -86,7 +91,8 @@
             "url": {{ site.url | jsonify }},
             "name": {{ settings.author.name | jsonify }},
             "alternateName": {{ settings.author.name_zh | jsonify }},
-            "publisher": { "@id": {{ person_id | jsonify }} }
+            "publisher": { "@id": {{ person_id | jsonify }} },
+            "inLanguage": ["en", "zh"]
           },
           {% endif %}
           {
@@ -98,7 +104,9 @@
             "author": { "@id": {{ person_id | jsonify }} },
             "about": { "@id": {{ person_id | jsonify }} },
             "isPartOf": { "@id": {{ website_id | jsonify }} },
-            "inLanguage": ["en", "zh"]
+            "inLanguage": ["en", "zh"],
+            "datePublished": {{ page.date | default: site.time | date_to_xmlschema | jsonify }},
+            "dateModified": {{ page.last_modified_at | default: site.time | date_to_xmlschema | jsonify }}
           }
         ]
       }

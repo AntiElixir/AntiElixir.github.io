@@ -32,9 +32,9 @@ author:
   avatar: "/assets/shared/portraits/sunset-photo.jpeg"
 
 seo:
-  home_title: "Hao Mingliang 郝铭梁 | Marine Science & AI at SJTU"
-  default_description: "Hao Mingliang (郝铭梁) is an undergraduate student at Shanghai Jiao Tong University, majoring in Marine Science with a minor in Finance. Research interests include magnetics tactile sensing, robotics learning, ocean dynamics, and quantitative finance."
-  projects_description: "Research projects by Hao Mingliang (郝铭梁) on ocean science, AI, robotics, and quantitative finance."
+  home_title: "Hao Mingliang 郝铭梁 | Marine Science & AI at Shanghai Jiao Tong University"
+  default_description: "Hao Mingliang (郝铭梁) is an undergraduate student at Shanghai Jiao Tong University (上海交通大学), majoring in Marine Science (海洋科学) with a minor in Finance. Research interests include magnetics tactile sensing, robotics learning, embodied intelligence, ocean dynamics, and quantitative finance."
+  projects_description: "Research projects by Hao Mingliang (郝铭梁) on ocean science, magnetics tactile sensing, robotics learning, AI, and quantitative finance at Shanghai Jiao Tong University."
 
 social:
   - label: "Email"
