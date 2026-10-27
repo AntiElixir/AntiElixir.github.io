@@ -174,24 +174,24 @@ img {
 .hero-tagline {
   display: flex;
   flex-direction: column;
+  line-height: 1.15;
+  max-width: none;
 }
 
 .tagline-line {
   display: block;
-  white-space: nowrap;
 }
 
 .tagline-letter {
   color: var(--accent);
-  display: inline-block;
-  margin-right: 0.2em;
+  margin-right: 0.15em;
 }
 
 .tagline-bottom {
   display: block;
-  font-size: 0.7em;
+  font-size: 0.65em;
   letter-spacing: 0.06em;
-  margin-top: 0.4em;
+  margin-top: 0.3em;
   opacity: 0.7;
 }
 
