@@ -15,9 +15,9 @@ description: "Mingliang Hao (郝铭梁) is an undergraduate student at Shanghai 
       </div>
       <div class="hero-copy">
         <h1 class="hero-tagline">
-          <span class="tagline-line"><span class="tagline-letter">A</span> Always</span>
-          <span class="tagline-line"><span class="tagline-letter">B</span> Be</span>
-          <span class="tagline-line"><span class="tagline-letter">C</span> Curious</span>
+          <span class="tagline-line"><span class="tagline-letter">A</span> <span class="tagline-letter">A</span>lways</span>
+          <span class="tagline-line"><span class="tagline-letter">B</span> <span class="tagline-letter">B</span>e</span>
+          <span class="tagline-line"><span class="tagline-letter">C</span> <span class="tagline-letter">C</span>urious</span>
           <span class="tagline-bottom">ALWAYS BE CURIOUS</span>
         </h1>
         {% if settings.hero.description %}
