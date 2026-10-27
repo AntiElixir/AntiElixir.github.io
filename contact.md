@@ -9,7 +9,7 @@ description: "Contact Hao Mingliang (郝铭梁), an undergraduate student at Sha
 <section class="section page-section">
   <div class="container">
     <div class="contact-layout">
-      {% include responsive-photo.html src="/assets/shared/portraits/sunset-photo.jpeg" alt="Hao Mingliang" sizes="(max-width: 900px) 100vw, 48vw" %}
+      {% include responsive-photo.html src="/assets/shared/portraits/sunset-photo.jpg" alt="Hao Mingliang" sizes="(max-width: 900px) 100vw, 48vw" %}
       <div class="contact-copy">
         <p class="eyebrow">Research collaborations · academic inquiries</p>
         <h2>Let's talk about ocean science, AI, or basketball.</h2>

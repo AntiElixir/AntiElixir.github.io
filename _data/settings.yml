@@ -29,7 +29,7 @@ author:
   same_as:
     - "https://github.com/AntiElixir"
   bio: "Marine science undergrad at SJTU. Curious about the ocean, AI, basketball, and rhythm games."
-  avatar: "/assets/shared/portraits/sunset-photo.jpeg"
+  avatar: "/assets/shared/portraits/sunset-photo.jpg"
 
 seo:
   home_title: "Hao Mingliang 郝铭梁 | Marine Science & AI at Shanghai Jiao Tong University"
@@ -45,7 +45,7 @@ social:
 hero:
   title: "I'm Hao Mingliang. I study the ocean and build things."
   description: ""
-  image: "/assets/shared/portraits/sunset-photo.jpeg"
+  image: "/assets/shared/portraits/sunset-photo.jpg"
 
 projects:
   title: "Projects"
@@ -57,7 +57,7 @@ notes:
 
 gallery:
   - alt: "Sunset at sea"
-    url: "/assets/shared/portraits/sunset-photo.jpeg"
+    url: "/assets/shared/portraits/sunset-photo.jpg"
 
 contact:
   email: "fhy_elixir@sjtu.edu.cn"
