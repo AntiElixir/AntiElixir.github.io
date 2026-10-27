@@ -1,0 +1,64 @@
+# Site settings for Hao Mingliang's personal website.
+title: "Hao Mingliang"
+description: "Marine science, AI, and everything in between."
+email: "fhy_elixir@sjtu.edu.cn"
+github_username: "AntiElixir"
+
+menu:
+  - title: "Home"
+    url: "/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "Notes"
+    url: "/notes/"
+  - title: "Contact"
+    url: "/contact/"
+
+author:
+  name: "Hao Mingliang"
+  name_zh: "郝铭梁"
+  job_title: "Undergraduate Student"
+  affiliation: "Shanghai Jiao Tong University"
+  affiliation_url: "https://www.sjtu.edu.cn/"
+  research_interests:
+    - "Magnetics tactile sensing"
+    - "Robotics learning"
+    - "Embodied intelligence"
+    - "Ocean dynamics"
+    - "Quantitative finance"
+  same_as:
+    - "https://github.com/AntiElixir"
+  bio: "Marine science undergrad at SJTU. Curious about the ocean, AI, basketball, and rhythm games."
+  avatar: "/assets/shared/portraits/sunset-photo.jpeg"
+
+seo:
+  home_title: "Hao Mingliang 郝铭梁 | Marine Science & AI at SJTU"
+  default_description: "Hao Mingliang (郝铭梁) is an undergraduate student at Shanghai Jiao Tong University, majoring in Marine Science with a minor in Finance. Research interests include magnetics tactile sensing, robotics learning, ocean dynamics, and quantitative finance."
+  projects_description: "Research projects by Hao Mingliang (郝铭梁) on ocean science, AI, robotics, and quantitative finance."
+
+social:
+  - label: "Email"
+    url: "mailto:fhy_elixir@sjtu.edu.cn"
+  - label: "GitHub"
+    url: "https://github.com/AntiElixir"
+
+hero:
+  title: "I'm Hao Mingliang. I study the ocean and build things."
+  description: ""
+  image: "/assets/shared/portraits/sunset-photo.jpeg"
+
+projects:
+  title: "Projects"
+  description: "Research in ocean science, AI, and quantitative finance."
+
+notes:
+  title: "Notes"
+  description: "Reading notes, research logs, and things I find interesting."
+
+gallery:
+  - alt: "Sunset at sea"
+    url: "/assets/shared/portraits/sunset-photo.jpeg"
+
+contact:
+  email: "fhy_elixir@sjtu.edu.cn"
+  description: "For research collaborations and academic inquiries."

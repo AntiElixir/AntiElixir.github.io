@@ -1,0 +1,50 @@
+title: "Hao Mingliang"
+description: "A personal website for Hao Mingliang (郝铭梁), an undergraduate at Shanghai Jiao Tong University."
+url: "https://antielixir.github.io"
+baseurl: ""
+email: "fhy_elixir@sjtu.edu.cn"
+github_username: "AntiElixir"
+# Paste the value from Google Search Console's HTML-tag verification method here.
+google_site_verification: ""
+# Bing Webmaster Tools HTML-tag verification value. Rendered site-wide when set.
+bing_site_verification: ""
+
+markdown: kramdown
+permalink: /notes/:slug/
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 10
+paginate_path: "/notes/page/:num"
+
+collections:
+  notes:
+    output: true
+    permalink: /notes/:slug/
+  works:
+    output: true
+    permalink: /work/:slug/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: "note"
+  - scope:
+      path: ""
+      type: "works"
+    values:
+      layout: "work"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

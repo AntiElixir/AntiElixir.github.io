@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<article class="project-page">
+  <div class="container">
+    <a class="back-link" href="{{ '/projects/' | relative_url }}">Back to projects</a>
+
+    <header class="project-head">
+      <div>
+        <p class="eyebrow">{{ page.kind | default: "Project" }}</p>
+        <h1>{{ page.title }}</h1>
+        {% if page.subtitle %}<p>{{ page.subtitle }}</p>{% endif %}
+        <div class="meta-row">
+          {% if page.year %}<span>{{ page.year }}</span>{% endif %}
+          {% if page.role %}<span>{{ page.role }}</span>{% endif %}
+          {% if page.status %}<span>{{ page.status }}</span>{% endif %}
+        </div>
+      </div>
+      {% assign project_image = page.detail_image | default: page.image %}
+      {% if project_image %}
+        <img src="{{ project_image | relative_url }}" alt="{{ page.title }} visual">
+      {% elsif page.status == "In progress" %}
+        <div class="project-placeholder project-placeholder-detail" role="img" aria-label="{{ page.title }} image coming soon">?</div>
+      {% endif %}
+    </header>
+
+    <div class="project-content">
+      <div class="prose">
+        {{ content }}
+      </div>
+
+      <aside class="side-panel">
+        {% if page.links %}
+          <h2>Links</h2>
+          {% for link in page.links %}
+            <a href="{{ link.url }}"{% if link.url contains 'http' %} target="_blank" rel="noopener"{% endif %}>{{ link.label }}</a>
+          {% endfor %}
+        {% endif %}
+        {% if page.tags %}
+          <h2>Tags</h2>
+          <div class="tag-list">
+            {% for tag in page.tags %}
+              <span>{{ tag }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </aside>
+    </div>
+  </div>
+</article>

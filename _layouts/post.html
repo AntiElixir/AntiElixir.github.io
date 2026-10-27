@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+{% assign is_instagram_post = false %}
+{% if page.tags contains "instagram" %}
+  {% assign is_instagram_post = true %}
+{% endif %}
+
+<header class="post-head{% if is_instagram_post %} instagram-post-head{% endif %}">
+  <div class="container">
+    {% if page.tags %}
+      <div class="post-tags">
+        {% for tag in page.tags %}
+          <a href="{{ '/blog/' | relative_url }}">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <h1>{{ page.title }}</h1>
+    <p class="post-meta">
+      <a href="{{ '/cv/' | relative_url }}">{{ site.data.settings.author.name }}</a>
+      <span>–</span>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time>
+    </p>
+
+    {% if is_instagram_post %}
+      <div class="instagram-orbit-notes" aria-hidden="true">
+        <span>@kevinhyj</span>
+        <span>{{ page.date | date: "%B %-d, %Y" }}</span>
+        <span>drag the space</span>
+      </div>
+    {% endif %}
+  </div>
+</header>
+
+<article class="post{% if is_instagram_post %} instagram-post{% endif %}">
+  <div class="container">
+    {% if is_instagram_post %}
+      <div class="instagram-sound-panel">
+        {% if page.instagram_url %}
+          <a class="instagram-source-link" href="{{ page.instagram_url }}" target="_blank" rel="noopener">View on Instagram</a>
+        {% else %}
+          <span class="instagram-source-link">Photo archive</span>
+        {% endif %}
+      </div>
+    {% elsif page.image %}
+      {% include responsive-photo.html src=page.image alt=page.title class="post-image" sizes="(max-width: 960px) 100vw, 920px" fetchpriority="high" %}
+    {% endif %}
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    {% if page.gallery %}
+      <div class="instagram-grid">
+        {% for item in page.gallery %}
+          {% include responsive-photo.html src=item.src alt=item.alt picture_class=item.class sizes="(max-width: 560px) 100vw, 50vw" %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</article>
+
+{% assign related_posts = site.posts | where_exp: "post", "post.url != page.url" %}
+{% if related_posts.size > 0 %}
+  <section class="related-posts">
+    <div class="container">
+      <h2>You may also like</h2>
+      <div class="post-card-grid">
+        {% for post in related_posts limit:3 %}
+          <a class="post-card" href="{{ post.url | relative_url }}">
+            {% if post.image %}{% include responsive-photo.html src=post.image alt=post.title sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 33vw" %}{% endif %}
+            <div>
+              <p class="post-card-tags">{{ post.tags | join: " / " }}</p>
+              <h3>{{ post.title }}</h3>
+              <p>{{ post.excerpt | strip_html | truncate: 110 }}</p>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endif %}

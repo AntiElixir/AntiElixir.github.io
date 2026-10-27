@@ -1,0 +1,6 @@
+{% assign photo_640 = include.src | replace: ".jpeg", "-640.webp" | replace: ".jpg", "-640.webp" %}
+{% assign photo_1280 = include.src | replace: ".jpeg", "-1280.webp" | replace: ".jpg", "-1280.webp" %}
+<picture{% if include.picture_class %} class="{{ include.picture_class }}"{% endif %}>
+  <source type="image/webp" srcset="{{ photo_640 | relative_url }} 640w, {{ photo_1280 | relative_url }} 1280w" sizes="{{ include.sizes | default: '100vw' }}">
+  <img src="{{ include.src | relative_url }}" alt="{{ include.alt }}"{% if include.class %} class="{{ include.class }}"{% endif %}{% if include.fetchpriority %} fetchpriority="{{ include.fetchpriority }}"{% endif %} decoding="async">
+</picture>

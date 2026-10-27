@@ -1,0 +1,6 @@
+{% assign image_480 = include.src | replace: ".png", "-480.webp" | replace: ".jpeg", "-480.webp" | replace: ".jpg", "-480.webp" %}
+{% assign image_960 = include.src | replace: ".png", "-960.webp" | replace: ".jpeg", "-960.webp" | replace: ".jpg", "-960.webp" %}
+<picture>
+  <source type="image/webp" srcset="{{ image_480 | relative_url }} 480w, {{ image_960 | relative_url }} 960w" sizes="{{ include.sizes | default: '(max-width: 560px) 100vw, (max-width: 900px) 50vw, 33vw' }}">
+  <img src="{{ include.src | relative_url }}" alt="{{ include.alt }}" decoding="async">
+</picture>

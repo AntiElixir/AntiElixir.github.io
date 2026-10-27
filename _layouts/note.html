@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<header class="note-head">
+  <div class="container">
+    {% if page.tags %}
+      <div class="note-tags">
+        {% for tag in page.tags %}
+          <a href="{{ '/notes/' | relative_url }}">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}
+      <p class="note-subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+  </div>
+</header>
+
+<article class="note-content">
+  <div class="container">
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
+</article>
+
+{% assign related_notes = site.notes | where_exp: "note", "note.url != page.url" %}
+{% if related_notes.size > 0 %}
+  <section class="related-notes">
+    <div class="container">
+      <h2>More notes</h2>
+      <div class="note-card-grid">
+        {% for note in related_notes limit:3 %}
+          <a class="note-card" href="{{ note.url | relative_url }}">
+            <div>
+              <p class="note-card-tags">{{ note.tags | join: " / " }}</p>
+              <h3>{{ note.title }}</h3>
+              <p>{{ note.excerpt | strip_html | truncate: 110 }}</p>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endif %}
