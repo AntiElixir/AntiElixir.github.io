@@ -74,31 +74,6 @@ description: "Mingliang Hao (郝铭梁) is an undergraduate student at Shanghai 
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <h2>{{ settings.notes.title }}</h2>
-        {% if settings.notes.description %}<p>{{ settings.notes.description }}</p>{% endif %}
-      </div>
-      <a href="{{ '/notes/' | relative_url }}">See all</a>
-    </div>
-
-    <div class="note-card-grid">
-      {% assign recent_notes = site.notes | sort: "date" | reverse %}
-      {% for note in recent_notes limit:4 %}
-        <a class="note-card" href="{{ note.url | relative_url }}">
-          <div>
-            <p class="note-card-tags">{{ note.tags | join: " / " }}</p>
-            <h3>{{ note.title }}</h3>
-            <p>{{ note.excerpt | strip_html | truncate: 120 }}</p>
-          </div>
-        </a>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
 <section class="section" aria-labelledby="hobbies">
   <div class="container">
     <p class="eyebrow">Beyond research</p>

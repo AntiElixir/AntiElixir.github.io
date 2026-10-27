@@ -1002,173 +1002,6 @@ img {
   margin: 0;
 }
 
-.note-card-grid {
-  display: grid;
-  gap: 28px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.note-card {
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  color: inherit;
-  display: block;
-  padding: 20px;
-  transition: border-color 180ms ease, transform 180ms ease;
-}
-
-.note-card:hover {
-  border-color: var(--accent);
-  transform: translateY(-2px);
-}
-
-.note-card-tags {
-  color: var(--accent);
-  font-size: 0.74rem;
-  font-weight: 820;
-  letter-spacing: 0;
-  margin: 0 0 8px;
-  text-transform: lowercase;
-}
-
-.note-card h3 {
-  font-size: 1.18rem;
-  letter-spacing: 0;
-  line-height: 1.25;
-  margin: 0 0 8px;
-}
-
-.note-card p {
-  color: var(--muted);
-  margin: 0;
-  font-size: 0.95rem;
-}
-
-.note-head {
-  padding: 62px 0 28px;
-}
-
-.note-head h1 {
-  font-size: 2.55rem;
-  font-weight: 820;
-  letter-spacing: 0;
-  line-height: 1.08;
-  margin: 0;
-}
-
-.note-subtitle {
-  color: var(--muted);
-  font-size: 1.08rem;
-  margin: 10px 0 0;
-  max-width: 690px;
-}
-
-.note-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-bottom: 12px;
-}
-
-.note-tags a {
-  color: var(--accent);
-  font-size: 0.78rem;
-  font-weight: 820;
-  text-transform: lowercase;
-}
-
-.note-content {
-  padding-bottom: 72px;
-}
-
-.note-content .prose {
-  max-width: 780px;
-  font-size: 1.05rem;
-  line-height: 1.7;
-}
-
-.note-content .prose h2 {
-  color: var(--text);
-  font-size: 1.45rem;
-  letter-spacing: 0;
-  margin-top: 36px;
-  margin-bottom: 14px;
-}
-
-.note-content .prose h3 {
-  color: var(--text);
-  font-size: 1.2rem;
-  margin-top: 28px;
-  margin-bottom: 10px;
-}
-
-.note-content .prose p {
-  margin: 14px 0;
-}
-
-.note-content .prose ul,
-.note-content .prose ol {
-  padding-left: 24px;
-  margin: 14px 0;
-}
-
-.note-content .prose li {
-  margin: 6px 0;
-}
-
-.note-content .prose code {
-  background: var(--surface);
-  border-radius: 4px;
-  font-size: 0.92em;
-  padding: 2px 6px;
-}
-
-.note-content .prose pre {
-  background: var(--surface);
-  border-radius: 8px;
-  overflow-x: auto;
-  padding: 16px;
-}
-
-.note-content .prose pre code {
-  background: none;
-  padding: 0;
-}
-
-.note-content .prose blockquote {
-  border-left: 3px solid var(--accent);
-  color: var(--muted);
-  margin: 20px 0;
-  padding-left: 18px;
-}
-
-.related-notes {
-  border-top: 1px solid var(--line);
-  padding: 48px 0 70px;
-}
-
-.related-notes h2 {
-  font-size: 1.55rem;
-  letter-spacing: 0;
-  margin: 0 0 22px;
-}
-
-.related-notes .note-card-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-@media (max-width: 900px) {
-  .related-notes .note-card-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 560px) {
-  .related-notes .note-card-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 .button {
   background: var(--text);
   border-radius: 999px;
@@ -1658,7 +1491,6 @@ img {
 
   .project-grid,
   .post-card-grid,
-  .note-card-grid,
   .footer-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1702,7 +1534,6 @@ img {
 
   .project-grid,
   .post-card-grid,
-  .note-card-grid,
   .instagram-grid,
   .photo-board,
   .footer-gallery {
