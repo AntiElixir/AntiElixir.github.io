@@ -12,7 +12,7 @@ description: "Contact Mingliang Hao (郝铭梁), an undergraduate student at Sha
       {% include responsive-photo.html src="/assets/shared/portraits/sunset-photo.jpg" alt="Mingliang Hao" sizes="(max-width: 900px) 100vw, 48vw" %}
       <div class="contact-copy">
         <p class="eyebrow">Research collaborations · academic inquiries</p>
-        <h2>Let's talk about ocean science, AI, or basketball.</h2>
+        <h2>Let's talk about AI, robotics, or basketball.</h2>
         <p>I'm always interested in discussing research ideas, potential collaborations, or just chatting about our shared interests. Feel free to reach out!</p>
         <div class="contact-list">
           <a href="mailto:fhy_elixir@sjtu.edu.cn">
@@ -29,7 +29,7 @@ description: "Contact Mingliang Hao (郝铭梁), an undergraduate student at Sha
 
     <div class="contact-note">
       <p class="eyebrow">Current interests</p>
-      <p>Embodied intelligence, AI, magnetics tactile sensing, quantitative finance, and ocean dynamics. Also happy to talk about basketball tactics or Phigros strategies.</p>
+      <p>Embodied intelligence, AI, magnetics tactile sensing, and quantitative finance. Also happy to talk about basketball tactics or Phigros strategies.</p>
     </div>
   </div>
 </section>

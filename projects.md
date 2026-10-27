@@ -2,8 +2,8 @@
 title: Projects
 permalink: /projects/
 eyebrow: Projects
-subtitle: "Research in embodied intelligence, AI, quantitative finance, and ocean science."
-description: "Research projects by Mingliang Hao (郝铭梁) on embodied intelligence, robotics learning, AI, quantitative finance, and ocean dynamics."
+subtitle: "Research in embodied intelligence, AI, and quantitative finance."
+description: "Research projects by Mingliang Hao (郝铭梁) on embodied intelligence, robotics learning, AI, and quantitative finance."
 ---
 
 <section class="section page-section">

@@ -1,6 +1,6 @@
 # Site settings for Mingliang Hao's personal website.
 title: "Mingliang Hao"
-description: "Marine science, AI, and everything in between."
+description: "AI, embodied intelligence, and everything in between."
 email: "fhy_elixir@sjtu.edu.cn"
 github_username: "AntiElixir"
 
@@ -25,16 +25,15 @@ author:
     - "Robotics learning"
     - "Magnetics tactile sensing"
     - "Quantitative finance"
-    - "Ocean dynamics"
   same_as:
     - "https://github.com/AntiElixir"
-  bio: "Marine science undergrad at SJTU. Curious about AI, embodied intelligence, quantitative methods, and the ocean."
+  bio: "Undergrad at SJTU. Curious about AI, embodied intelligence, and quantitative methods."
   avatar: "/assets/shared/portraits/sunset-photo.jpg"
 
 seo:
-  home_title: "Mingliang Hao 郝铭梁 | Embodied Intelligence, AI & Marine Science at SJTU"
-  default_description: "Mingliang Hao (郝铭梁) is an undergraduate student at Shanghai Jiao Tong University (上海交通大学), majoring in Marine Science (海洋科学). Research interests include embodied intelligence, robotics learning, magnetics tactile sensing, quantitative finance, and ocean dynamics."
-  projects_description: "Research projects by Mingliang Hao (郝铭梁) on embodied intelligence, AI, quantitative finance, and ocean science at Shanghai Jiao Tong University."
+  home_title: "Mingliang Hao 郝铭梁 | Embodied Intelligence, AI & Robotics at SJTU"
+  default_description: "Mingliang Hao (郝铭梁) is an undergraduate student at Shanghai Jiao Tong University (上海交通大学). Research interests include embodied intelligence, robotics learning, magnetics tactile sensing, and quantitative finance."
+  projects_description: "Research projects by Mingliang Hao (郝铭梁) on embodied intelligence, AI, and quantitative finance at Shanghai Jiao Tong University."
 
 social:
   - label: "Email"
@@ -43,13 +42,13 @@ social:
     url: "https://github.com/AntiElixir"
 
 hero:
-  title: "I'm Mingliang Hao. I build intelligent systems and study the ocean."
+  title: "I'm Mingliang Hao. I build intelligent systems."
   description: ""
   image: "/assets/shared/portraits/sunset-photo.jpg"
 
 projects:
   title: "Projects"
-  description: "Research in embodied intelligence, AI, quantitative finance, and ocean science."
+  description: "Research in embodied intelligence, AI, and quantitative finance."
 
 notes:
   title: "Notes"

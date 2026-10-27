@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-description: "Mingliang Hao (郝铭梁) is an undergraduate student at Shanghai Jiao Tong University, majoring in Marine Science. Research interests include embodied intelligence, robotics learning, ocean dynamics, and quantitative finance."
+description: "Mingliang Hao (郝铭梁) is an undergraduate student at Shanghai Jiao Tong University. Research interests include embodied intelligence, robotics learning, and quantitative finance."
 ---
 
 {% assign settings = site.data.settings %}
@@ -26,8 +26,8 @@ description: "Mingliang Hao (郝铭梁) is an undergraduate student at Shanghai 
 <section class="section research-intro" aria-labelledby="about-me">
   <div class="container">
     <p class="eyebrow">About me</p>
-    <h2 id="about-me">I build intelligent systems and study the ocean.</h2>
-    <p class="research-summary">I'm an undergraduate at Shanghai Jiao Tong University, majoring in Marine Science. My work spans embodied intelligence, robotics learning, quantitative finance, and ocean dynamics.</p>
+    <h2 id="about-me">I build intelligent systems.</h2>
+    <p class="research-summary">I'm an undergraduate at Shanghai Jiao Tong University. My work spans embodied intelligence, robotics learning, and quantitative finance.</p>
     <div class="research-directions">
       <div>
         <h3>Embodied intelligence & AI</h3>
@@ -36,10 +36,6 @@ description: "Mingliang Hao (郝铭梁) is an undergraduate student at Shanghai 
       <div>
         <h3>Quantitative finance</h3>
         <p>How can machine learning models predict commodity futures markets?</p>
-      </div>
-      <div>
-        <h3>Ocean dynamics</h3>
-        <p>How do mesoscale eddies regulate ocean heatwaves and affect marine ecosystems?</p>
       </div>
     </div>
   </div>

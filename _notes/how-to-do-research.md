@@ -7,7 +7,7 @@ tags:
   - "学习方法"
 ---
 
-Reflections on doing research as an undergraduate, based on my experience with ocean science and AI projects.
+Reflections on doing research as an undergraduate, based on my experience with AI and robotics projects.
 
 ## Getting Started
 
@@ -27,7 +27,7 @@ Reflections on doing research as an undergraduate, based on my experience with o
 
 ### 1. Define the Question
 
-Be specific. "Understanding ocean eddies" is too broad. "How do cyclonic eddies affect chlorophyll concentration in the North Indian Ocean during summer monsoon?" is better.
+Be specific. "Understanding robot learning" is too broad. "How does tactile sensing improve grasping performance under object shape variation?" is better.
 
 ### 2. Gather Data
 
