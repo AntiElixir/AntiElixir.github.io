@@ -1,4 +1,4 @@
-# Yanjie Huang Personal Website
+# Mingliang Hao Personal Website
 
 An English-first personal garden built with Jekyll for GitHub Pages.
 
