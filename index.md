@@ -85,7 +85,7 @@ description: "Mingliang Hao (郝铭梁) is an undergraduate student at Shanghai 
       </div>
       <div class="hobby-card">
         <h3>Phigros</h3>
-        <p>Rhythm game enthusiast. Phigros's dynamic judgment lines and creative chart designs keep me coming back. 和着音乐进行节奏感很强的打击让我放松身心，正在冲击rks15。</p>
+        <p>Rhythm game enthusiast. Phigros's dynamic judgment lines and creative chart designs keep me coming back. Hitting notes to intense beats helps me unwind — currently pushing for rks 15.</p>
       </div>
     </div>
   </div>
