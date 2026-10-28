@@ -81,11 +81,11 @@ description: "Mingliang Hao (郝铭梁) is an undergraduate student at Shanghai 
     <div class="hobbies-grid">
       <div class="hobby-card">
         <h3>Basketball</h3>
-        <p>Point guard. Working on my first step, crossover, and defensive stance. Basketball teaches me about rhythm, spacing, and reading the defense — skills that translate to research too.</p>
+        <p>Small forward. I'm a shooter who loves practicing alone — just me, the ball, and the hoop. Those solo sessions teach me focus and patience.</p>
       </div>
       <div class="hobby-card">
         <h3>Phigros</h3>
-        <p>Rhythm game enthusiast. Phigros's dynamic judgment lines and creative chart designs keep me coming back. It's like solving a puzzle at 200 BPM.</p>
+        <p>Rhythm game enthusiast. Phigros's dynamic judgment lines and creative chart designs keep me coming back. 和着音乐进行节奏感很强的打击让我放松身心，正在冲击rks15。</p>
       </div>
     </div>
   </div>
